@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <h5 class="title">ADVICE <span id="advice-id"></span></h5>
+      <p class="advice"></p>
+      <picture>
+        <source
+          media="(min-width: 500px)"
+          srcset="./src/images/pattern-divider-desktop.svg"
+        />
+        <source
+          media="(min-width: 300px)"
+          srcset="./src/images/pattern-divider-mobile.svg"
+        />
+
+        <img src="./src/images/pattern-divider-desktop.svg" alt="" />
+      </picture>
+      <button class="generate">
+        <img src="./src/images/icon-dice.svg" alt="" />
+      </button>
+    </main>
+
+    <script src="./src/js/app.js" type="module"></script>
+  </body>
+</html>
